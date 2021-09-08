@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgba(16, 17, 55, 0);
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+}
+
+.navbar ul{
+    float: right;
+    padding: 10px;
+    padding-right: 20px;
+}
+.navbar ul li{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: #fff;
+}
+.logo{
+    width: 50px;
+    margin-left: 20px;
+}
+li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 255, 208);
+    transition: width .3s;
+}
+a:hover{
+    animation: hover 1s ease-in-out alternate;
+}
+a:hover::after {
+    width: 100%;
+}
+.navbar {
+    background-color: rgba(255, 255, 255, 0);
+    transition: 2.4s;
+  }
+  
+.scroll {
+    background-color: hsl(0, 0%, 0%);
+    transition: 2.5s;
+}
+.scroll .logo{
+    filter: invert(500);
+}
+.scroll ul li a{
+    color: rgb(255, 255, 255);
+
+}
+.scrollUp{
+    transition: 2.5s;
+}
