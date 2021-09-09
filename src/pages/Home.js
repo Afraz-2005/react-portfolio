@@ -35,6 +35,7 @@ export default function Home() {
               <MailIcon className={style.icon} />
               <p className={style.iconText}>mahbirafraz2007@gmail.com</p>
             </div>
+            <br /><br />
           </div>
         </div>
       </div>
