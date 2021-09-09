@@ -84,12 +84,14 @@ export default function Home() {
         <footer className={style.footer}>
           <div>
           <div className={style.child1}>
-            <p>Made by Imam Mahbir Afraz 2021 All rights researved</p>
+            <p>Made by Imam Mahbir Afraz 2021 &copy; All rights researved</p>
           </div>
           </div>
           <div className={style.child2}>
-            <Link to="/">Home | </Link>
-            <Link to="./skills"> | Skills</Link>
+            <Link to="/">Home </Link>
+            <Link to="./skills">Skills </Link>
+            <Link to="./skills">Project </Link>
+            <Link to="./skills">Contact</Link>
           </div>
         </footer>
       </div>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
@@ -25,7 +24,7 @@ html{
     flex-shrink: inherit;
     flex-grow: inherit;
     align-items: center;
-    background-image: linear-gradient(to right top, rgba(17, 43, 128, 0.782), rgba(0, 255, 115, 0.35)), url(../images/bg1.png);
+    background-image: linear-gradient(to right top, rgba(128, 17, 60, 0.782), rgba(0, 8, 255, 0.35)), url(../images/bg1.png);
     background-repeat: no-repeat;
     min-height: 100vh;
     max-width: 100%;
@@ -113,12 +112,16 @@ hr{
 } */
 .human{
     filter: invert(200);
+    transition: 1s;
+}
+.human:hover{
+    transform: rotate(10deg);
 }
 .reside{
  display: flex;
  flex-direction: column;
  min-height: 100vh !important;
- box-shadow: 2px 2px 60px 20px #07ffc995 ;
+ box-shadow: 2px 2px 60px 20px #ff076695 ;
  /* background-color: rgb(255, 255, 255); */
  /* background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.864), rgba(0, 255, 200, 0.659)); */
  background-repeat: no-repeat;
@@ -135,8 +138,9 @@ hr{
     /* margin: 30px; */
 
     font-family: 'Montserrat', sans-serif;    
-    color: rgb(28, 169, 127);
+    color: rgb(153, 25, 63);
     font-size: 40px;
+    font-weight: 600;
     
 }
 .h12{
@@ -144,6 +148,7 @@ hr{
     font-family: 'Montserrat', sans-serif;  
     align-items: center;
     margin-top: 30vh;
+
 
 }
 .btn:hover{
@@ -169,7 +174,7 @@ hr{
 
 }
 .about{
-    min-height: 100vh;
+    min-height: 120vh;
     box-shadow: 2px 2px 40px 2px rgb(255, 0, 111);
 
 }
@@ -187,13 +192,18 @@ hr{
     border: 7px solid;
     border-left-color: rgb(255, 0, 89);
     /* border-top-color: rgb(255, 0, 89); */
-
+    transition: 1s;
     box-shadow: 2px 2px 40px 2px rgb(255, 58, 143);
+}
+.bot:hover{
+    transform: rotate(360deg);
 }
 
 .footerContainer {
     display: flex;
     justify-content: center;
+    background-color: rgb(255, 0, 68);
+    color: white;
 }
 .footer div{
     display: flex;
@@ -206,9 +216,27 @@ hr{
 .footer .child1{
     margin-top: 30px;
     font-weight: 800;
+    margin-bottom: 10px;
 }
 .footer .child2{
     margin-bottom: 20px;
     font-weight: 800;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.6s;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 200;
+}
+.footer a:hover{
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+    font-weight: 900 !important;
 }
 
