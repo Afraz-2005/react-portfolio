@@ -206,6 +206,11 @@ h3 {
   /* margin-right: 100px; */
   width: 50%;
 }
+@media (max-width: 770px){
+  .aboutInfo{
+    border-left: none;
+  }
+}
 .firstChild h1 {
   font-size: calc(20px + 3vh);
 }
