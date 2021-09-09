@@ -33,7 +33,7 @@ export default function Home() {
           <div className={style.icons}>
             <div className={style.childs}>
               <MailIcon className={style.icon} />
-              <p className={style.icon}>mahbirafraz2007@gmail.com</p>
+              <p className={style.iconText}>mahbirafraz2007@gmail.com</p>
             </div>
           </div>
         </div>
@@ -62,19 +62,18 @@ export default function Home() {
               Native. I am more advanced in Web development (Frontend) and a bit
               at the backend. Recently learned Sass, Node js and React Native.
               Trying my best to achieve my goal as a software engineer.{" "}
+              <br /><br />
+              <hr className={style.hr} />
             </p>
-            <br />
-            <hr className={style.hr} />
-          </div>
+          </div><br /><br />
           <div className={style.secondChild}>
             <img
               src={Bot}
               alt="Me"
               className={style.bot}
               style={{
-                width: 300,
                 backgroundColor: "rgb(0, 255, 208)",
-                borderRadius: 200,
+                borderRadius: 1000,
               }}
             />
           </div>

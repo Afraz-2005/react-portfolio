@@ -21,8 +21,6 @@ html{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-shrink: inherit;
-    flex-grow: inherit;
     align-items: center;
     background-image: linear-gradient(to right top, rgba(128, 17, 60, 0.782), rgba(0, 8, 255, 0.35)), url(../images/bg1.png);
     background-repeat: no-repeat;
@@ -32,24 +30,28 @@ html{
     background-position: center;
 
 }
+.child1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .h2{
     color: rgb(255, 219, 73);
-    font-size: 30px;
+    font-size: calc(16px + 1vw);
     font-weight: 100;
 }
 .h1{
     color: rgb(149, 255, 218);
-    font-size: 60px;
+    font-size: calc(20px + 1vw);
     font-weight: 700;
 }
 h3{
     color: white;
-    font-size: 30px;
+    font-size: calc(14px + 1vw);
     font-weight: 100;
 }
 .welcome{
-    font-size: 40px;
-    color: rgb(111, 255, 248);
+    font-size: calc(16px + 3vw);
+    color: rgb(11, 255, 248);
     font-family: 'Allison', cursive;
 }
 hr{
@@ -61,8 +63,12 @@ hr{
 }
 .icon{
     color: rgb(255, 255, 255);
-    font-size: 2em !important;
+    font-size: calc(10px + 2vw) !important;
     margin: 10px 10px; 
+}
+.iconText{
+    color: white;
+    font-size: calc(10px + 1vw);
 }
 .icons, .childs{
     display: flex;
@@ -72,7 +78,7 @@ hr{
     align-items: center;
 }
 .childs p{
-    font-size: 20px !important;
+    font-size: calc(10px + 1vw) !important;
 }
 .btn{
     border: 2px solid rgb(255, 255, 255);
@@ -90,29 +96,12 @@ hr{
     text-decoration: none;
     color: white;
 }
-/* .child2{
-    float: left;
-    transform: translateX(100px);
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: rgb(45, 33, 48);
-    background-image: url(../images/myBot.png) !important;
-    background-size: cover;
-    background-position: center;
-    border: 10px solid rgb(0, 255, 242);
-    border-right-color: #c53252;
-    border-bottom-color: #c53252;
-    border-radius: 50%;
-    z-index: 10;
-    position: relative;
-    animation: rotate 2s ease-in-out alternate;
-} */
+
 .human{
     filter: invert(200);
     transition: 1s;
+    max-width: 20vw;
+    min-width: 200px;
 }
 .human:hover{
     transform: rotate(10deg);
@@ -120,10 +109,9 @@ hr{
 .reside{
  display: flex;
  flex-direction: column;
+ flex-wrap: wrap;
  min-height: 100vh !important;
  box-shadow: 2px 2px 60px 20px #ff076695 ;
- /* background-color: rgb(255, 255, 255); */
- /* background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.864), rgba(0, 255, 200, 0.659)); */
  background-repeat: no-repeat;
  max-width: 100%;
  background-size: cover;
@@ -139,7 +127,7 @@ hr{
 
     font-family: 'Montserrat', sans-serif;    
     color: rgb(153, 25, 63);
-    font-size: 40px;
+    font-size: calc( 10px + 4vw);
     font-weight: 600;
     
 }
@@ -170,7 +158,7 @@ hr{
     flex-grow: inherit;
     background-color: black;
     color: rgb(31, 255, 244);
-    line-height: 2.4em;
+    line-height: 1.4em;
 
 }
 .about{
@@ -180,13 +168,28 @@ hr{
 }
 .aboutInfo{
     margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 .firstChild{
     /* margin-right: 100px; */
     width: 50%;
 }
 .firstChild p{
-    font-size: 20px;
+    font-size: calc(10px + 1vw);
+}
+@media (max-width: 770px) {
+    .firstChild{
+        /* margin-right: 100px; */
+        width: 100%;
+}
+@media (max-width: 314px){
+    .firstChild p, h1{
+        text-align: center !important;
+
+    }
+}
 }
 .bot{
     border: 7px solid;
@@ -194,6 +197,20 @@ hr{
     /* border-top-color: rgb(255, 0, 89); */
     transition: 1s;
     box-shadow: 2px 2px 40px 2px rgb(255, 58, 143);
+    /* max-width: 70%; */
+    width: calc(100px + 10vw);
+}
+@media (max-width: 770px) {
+    .firstChild p, h1{
+        text-align: justify;
+
+    }
+    .firstChild hr{
+        display: none;
+    }
+    .bot{
+        margin-top: 10px;
+    }
 }
 .bot:hover{
     transform: rotate(360deg);
@@ -239,4 +256,73 @@ hr{
     color: black;
     font-weight: 900 !important;
 }
+
+/* @media (max-width: 1018px) {
+    .child1{
+        margin: 20px;
+    }
+}
+@media (max-width: 986px) {
+    .child1{
+        margin: 10px;
+    }
+}
+@media (max-width: 923px) {
+    .firstChild p{
+        font-size: 17px !important;
+    }
+    /* .bot{
+        width: 70% !important;
+    } */
+/* } */
+/* @media (max-width: 1011px) {
+    .h2{
+        font-size: 20px !important;
+    }
+    .h1{
+        font-size: 20px !important;
+    }
+    .h3{
+        font-size: 20px !important;
+    }
+    .human{
+        width: 70% !important;
+    }
+    .childs p, .childs .icon{
+        display: none;
+    }
+}
+
+    .about, .aboutInfo{
+        display: flex;
+        justify-content: left !important;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-shrink: inherit;
+        flex-grow: inherit;
+        background-color: black;
+        color: rgb(31, 255, 244);
+    
+    }
+    .aboutInfo{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 !important;
+    }
+    .firstChild p{
+        text-align: center;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .firstChild h1{
+        text-align: center;
+        justify-content: center;
+    }
+    .firstChild .hr{
+        display: none;
+        
+    } */
+/* }  */ 
 

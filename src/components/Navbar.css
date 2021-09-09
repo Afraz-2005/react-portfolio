@@ -11,21 +11,21 @@
     align-items: center;
     position: fixed;
     z-index: 2;
-    top: 0;
+    /* top: 0; */
     width: 100%;
 }
 
-.navbar ul{
+.navbar ul, .smallnav ul{
     float: right;
     padding: 10px;
     padding-right: 20px;
 }
-.navbar ul li{
+.navbar ul li, .smallnav ul li{
     display: inline-flex;
     text-decoration: none;
     list-style: none;
 }
-.navbar ul li a{
+.navbar ul li a, .smallnav ul li a{
     text-decoration: none;
     padding-left: 20px;
     color: #fff;
@@ -66,4 +66,25 @@ a:hover::after {
 }
 .scrollUp{
     transition: 2.5s;
+}
+.smallnav{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+@media (max-width: 800px){
+    .navbar{
+        display: none;
+    }
+    .smallnav{
+        display: flex !important;
+    }
 }
