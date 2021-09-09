@@ -21,7 +21,7 @@ class Navbar extends React.Component {
     } else {
       document.querySelector(".navbar").className = "navbar";
     }
-  };
+  }
 
   render() {
     return (

@@ -6,7 +6,6 @@ import Illustration from "../images/techlife.png";
 import Bot from "../images/myBot.png";
 import { Link } from "react-router-dom";
 
-
 export default function Home() {
   return (
     <div className={style.hero}>
@@ -52,7 +51,9 @@ export default function Home() {
       <div className={style.about}>
         <div className={style.aboutInfo}>
           <div className={style.firstChild}>
-            <h1>About me</h1>
+            <h1 style={{
+              color: 'rgb(255, 65, 115)'
+            }}>About me</h1>
             <br />
             <p>
               It's been a while since I started to learn programming. I have
@@ -64,7 +65,7 @@ export default function Home() {
               at the backend. Recently learned Sass, Node js and React Native.
               Trying my best to achieve my goal as a software engineer.{" "}
               <br /><br />
-              <hr className={style.hr} />
+              <hr className={style.nextHorizontal} />
             </p>
           </div><br /><br />
           <div className={style.secondChild}>
@@ -73,7 +74,7 @@ export default function Home() {
               alt="Me"
               className={style.bot}
               style={{
-                backgroundColor: "rgb(0, 255, 208)",
+                backgroundColor: "black",
                 borderRadius: 1000,
               }}
             />

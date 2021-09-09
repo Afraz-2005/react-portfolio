@@ -13,8 +13,12 @@
     z-index: 2;
     /* top: 0; */
     width: 100%;
-}
 
+}
+.navbar ul{
+    margin-left: 30px;
+    margin-right: 30px;
+}
 .navbar ul, .smallnav ul{
     float: right;
     padding: 10px;
