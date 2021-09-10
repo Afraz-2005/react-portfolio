@@ -36,10 +36,10 @@ class Navbar extends React.Component {
               <Link to="./skills">Skills</Link>
             </li>
             <li>
-              <Link to="./skills">Projects</Link>
+              <Link to="./">Projects</Link>
             </li>
             <li>
-              <Link to="./skills">Contact</Link>
+              <Link to="./">Contact</Link>
             </li>
           </ul>
           <br />
@@ -60,12 +60,12 @@ class Navbar extends React.Component {
                 </Link>
               </li>
               <li>
-                <Link to="./skills">
+                <Link to="./">
                   <FormatListBulletedIcon />
                 </Link>
               </li>
               <li>
-                <Link to="./skills">
+                <Link to="./">
                   <ContactsIcon />
                 </Link>
               </li>
