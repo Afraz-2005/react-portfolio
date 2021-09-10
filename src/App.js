@@ -10,7 +10,7 @@ function App() {
           {/* <Navbar /> */}
             <Switch>
              <Route path="/" component={Home} exact/>
-             <Route path="/skills" component={Skills}/>
+             <Route path="/skills" component={Skill}/>
             <Route component={Error}/>
            </Switch>
           {/* <Footer/> */}
