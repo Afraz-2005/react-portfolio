@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
 // import style from "./Home.module.css";
 import style from "./skills.module.css";
 import Navbar from "../components/Navbar";
-import MailIcon from "@material-ui/icons/Mail";
+// import MailIcon from "@material-ui/icons/Mail";
 import Illustration from "../images/skill.png";
 import Bot from "../images/myBot.png";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ import Css from "../images/css.png";
 import Js from "../images/js.png";
 import Bs from "../images/bootstrap.png";
 import Reactjs from "../images/reactjs.png";
-import Reactnative from "../images/reactnative.png";
+// import Reactnative from "../images/reactnative.png";
 import Electron from "../images/electron.png";
 
 export default function Skill() {
