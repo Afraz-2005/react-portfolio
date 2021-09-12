@@ -1,6 +1,5 @@
 import style from "./skills.module.css";
 import Navbar from "../components/Navbar";
-import Illustration from "../images/skill.png";
 import { Link } from "react-router-dom";
 import Cpp from "../images/c++.png";
 import Csharp from "../images/Csharp.png";
