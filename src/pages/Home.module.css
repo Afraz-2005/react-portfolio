@@ -178,8 +178,10 @@ h3 {
   flex-shrink: inherit;
   flex-grow: inherit;
   background-color: black;
-  color: rgb(31, 255, 244);
+  /* color: rgb(241, 255, 254); */
   /* line-height: 1.4em; */
+  color: rgb(105, 255, 235);
+
 }
 .about {
   min-height: 120vh;
@@ -189,7 +191,7 @@ h3 {
   margin-top: 100px;
   margin-left: 20px;
   margin-right: 20px;
-  border-left: 2px solid rgb(255, 65, 115);
+  border-left: 2px solid rgb(255, 0, 76);
 }
 .nextHorizontal {
   width: 30%;
@@ -213,6 +215,7 @@ h3 {
 }
 .firstChild h1 {
   font-size: calc(20px + 3vh);
+  color: rgb(255, 0, 76) !important;
 }
 .firstChild p {
   font-size: calc(10px + 1vw);

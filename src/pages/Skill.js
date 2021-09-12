@@ -11,7 +11,7 @@ import Css from "../images/css.png";
 import Js from "../images/js.png";
 import Bs from "../images/bootstrap.png";
 import Reactjs from "../images/reactjs.png";
-// import Reactnative from "../images/reactnative.png";
+import Reactnative from "../images/rn.png";
 // import Electron from "../images/electron.png";
 
 import Vscode from "../images/vscode.png";
@@ -95,6 +95,11 @@ export default function Skill() {
               <div className={style.column1}>
                 <div className={style.css}>
                   <img src={Css} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.rn}>
+                  <img src={Reactnative} alt="C++" className={style.logos} />
                 </div>
               </div>
               <div className={style.column1}>
