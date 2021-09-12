@@ -23,10 +23,10 @@ html {
   background-image: linear-gradient(
       to right top,
 
-      rgba(165, 17, 74, 0.878), rgba(32, 187, 159, 0.556),rgba(33, 39, 214, 0.576)
+      rgba(165, 17, 74, 0.987), rgba(32, 187, 159, 0.987),rgb(33, 39, 214)
 
-    ),
-    url(../images/bg1.png);
+    );
+    /* url(../images/bg1.png); */
   background-repeat: no-repeat;
   min-height: 100vh;
   max-width: 100%;
@@ -59,7 +59,7 @@ h3 {
 
 }
 .welcome {
-  font-size: calc(16px + 3vw);
+  font-size: calc(20px + 3vw);
   color: rgb(11, 255, 248);
   font-family: "Allison", cursive;
   text-shadow: 2px 2px 4px rgb(96, 105, 135);
@@ -179,10 +179,10 @@ h3 {
   flex-wrap: wrap;
   flex-shrink: inherit;
   flex-grow: inherit;
-  background-color: black;
+  background-color: rgb(18, 22, 29);
   /* color: rgb(241, 255, 254); */
   /* line-height: 1.4em; */
-  color: rgb(162, 255, 238);
+  color: rgb(0, 247, 255);
 
 }
 .about {
@@ -200,8 +200,8 @@ h3 {
   height: 10px;
   background-image: linear-gradient(
     to right,
-    rgb(238, 0, 91),
-    rgb(60, 65, 187)
+    rgb(0, 110, 255),
+    rgb(0, 255, 251)
   );
   border: none;
   border-radius: 20px;
@@ -262,7 +262,7 @@ h3 {
 .footerContainer {
   display: flex;
   justify-content: center;
-  background-color: rgb(197, 36, 71);
+  background-color: rgb(220, 54, 90);
   color: white;
 }
 .footer div {

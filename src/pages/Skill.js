@@ -50,26 +50,16 @@ export default function Skill() {
               A high school student and web developer
             </h3> */}
           <br />
-          <hr className={style.hr} />
+          {/* <hr className={style.hr} /> */}
           <br />
           <br />
           {/* <p className={style.welcome}>Welcome to my portfolio!!</p> */}
           <br />
           <button className={style.btn}>
             <a href="https://github.com/Afraz-2005" target="_">
-              Learn More
+              Visit my Github
             </a>
           </button>
-        </div>
-        <div className={style.child2}>
-          <img src={Illustration} alt="human" className={style.human} />
-          <div className={style.icons}>
-            <div className={style.childs}>
-              {/* <MailIcon className={style.icon} /> */}
-            </div>
-            <br />
-            <br />
-          </div>
         </div>
       </div>
       <div className={style.reside}>
