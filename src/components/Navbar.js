@@ -7,6 +7,7 @@ import SettingsIcon from "@material-ui/icons/Settings";
 import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
 import ContactsIcon from "@material-ui/icons/Contacts";
 import White from "../images/logoWhite.png";
+// import ScrollIndicator from "./ScrollIndicator";
 
 class Navbar extends React.Component {
   componentDidMount() {

@@ -1,0 +1,19 @@
+.progress {
+  background-color: black;
+  width: 4px;
+  position: fixed;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+}
+.progressStyle {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 62, 129),
+    rgb(43, 85, 255),
+    rgb(0, 255, 187)
+
+  );
+  width: 4px;
+  border-radius: 100px;
+}

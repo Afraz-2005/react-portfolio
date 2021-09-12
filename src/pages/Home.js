@@ -5,11 +5,13 @@ import MailIcon from "@material-ui/icons/Mail";
 import Illustration from "../images/techlife.png";
 import Bot from "../images/myBot.png";
 import { Link } from "react-router-dom";
+import ScrollIndicator from "../components/ScrollIndicator";
 
 export default function Home() {
   return (
     <div className={style.hero}>
       <Navbar />
+      <ScrollIndicator/>
       <div className={style.banner}>
         <div className={style.child1}>
           <h2 className={style.h2}>Hi There,</h2>

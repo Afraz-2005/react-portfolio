@@ -28,10 +28,13 @@ import Figma from "../images/figma.png";
 import Pr from "../images/pr.png";
 import Lrc from "../images/lrc.png"
 
+import ScrollIndicator from "../components/ScrollIndicator";
+
 export default function Skill() {
   return (
     <div className={style.hero}>
       <Navbar />
+      <ScrollIndicator/>
       <div className={style.banner}>
         <div className={style.child1}>
           <h2 className={style.h2}>Hey!</h2>
