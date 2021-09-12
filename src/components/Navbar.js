@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import Logo from "../images/logo.png";
+// import Logo from "../images/logo.png";
 import HomeIcon from "@material-ui/icons/Home";
 import SettingsIcon from "@material-ui/icons/Settings";
 import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
 import ContactsIcon from "@material-ui/icons/Contacts";
+import White from "../images/logoWhite.png";
 
 class Navbar extends React.Component {
   componentDidMount() {
@@ -27,7 +28,7 @@ class Navbar extends React.Component {
     return (
       <div className="main">
         <div className="navbar">
-          <img src={Logo} alt="logo" className="logo" />
+          <img src={White} alt="logo" className="logo" />
           <ul>
             <li>
               <Link to="./">Home</Link>

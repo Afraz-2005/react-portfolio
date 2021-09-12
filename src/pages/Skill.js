@@ -1,10 +1,6 @@
-// import React, { Component } from "react";
-// import style from "./Home.module.css";
 import style from "./skills.module.css";
 import Navbar from "../components/Navbar";
-// import MailIcon from "@material-ui/icons/Mail";
 import Illustration from "../images/skill.png";
-import Bot from "../images/myBot.png";
 import { Link } from "react-router-dom";
 import Cpp from "../images/c++.png";
 import Csharp from "../images/Csharp.png";
@@ -16,7 +12,21 @@ import Js from "../images/js.png";
 import Bs from "../images/bootstrap.png";
 import Reactjs from "../images/reactjs.png";
 // import Reactnative from "../images/reactnative.png";
-import Electron from "../images/electron.png";
+// import Electron from "../images/electron.png";
+
+import Vscode from "../images/vscode.png";
+import Intellij from "../images/intellij.png";
+import Android from "../images/android.png";
+import Vst from "../images/vst.png";
+import Pycharm from "../images/pycharm.png";
+
+import Ps from "../images/ps.png";
+import Ai from "../images/ai.ico";
+import Xd from "../images/xd.png";
+import Filmora from "../images/filmora.png";
+import Figma from "../images/figma.png";
+import Pr from "../images/pr.png";
+import Lrc from "../images/lrc.png"
 
 export default function Skill() {
   return (
@@ -102,17 +112,48 @@ export default function Skill() {
                   <img src={Reactjs} alt="C++" className={style.logos} />
                 </div>
               </div>
+            </div>
+          </div>
+          <div className={style.h12}>
+            <h1>Graphics and UI designing</h1>
+            <div className={style.row}>
               <div className={style.column1}>
-                <div className={style.electron}>
-                  <img src={Electron} alt="C++" className={style.logos} />
+                <div className={style.ps}>
+                  <img src={Ps} alt="C++" className={style.logos} />
                 </div>
               </div>
               <div className={style.column1}>
-                <div className={style.rn}>
-                  <img src={Reactjs} alt="C++" className={style.logos} />
+                <div className={style.ai}>
+                  <img src={Ai} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.xd}>
+                  <img src={Xd} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.fl}>
+                  <img src={Filmora} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.pr}>
+                  <img src={Pr} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.figma}>
+                  <img src={Figma} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.lrc}>
+                  <img src={Lrc} alt="C++" className={style.logos} />
                 </div>
               </div>
             </div>
+            <br /><br />
           </div>
         </div>
       </div>
@@ -124,35 +165,33 @@ export default function Skill() {
                 color: "rgb(255, 65, 115)",
               }}
             >
-              About me
+              Tools I use for productivity
             </h1>
             <br />
-            <p>
-              It's been a while since I started to learn programming. I have
-              ideas on softwares and hardwares and can create simple GUI
-              applications and a bit advanced console applications. I have
-              learnt programming languages such as Java, C++, Python, Dart, C#,
-              JavaScript and app frameworks like Flutter, React JS and React
-              Native. I am more advanced in Web development (Frontend) and a bit
-              at the backend. Recently learned Sass, Node js and React Native.
-              Trying my best to achieve my goal as a software engineer. <br />
+            <p className={style.tools}>
+              <div className={style.column2}>
+                <img src={Vscode} alt="" className={style.logo2} />
+              </div>
+              <div className={style.column2}>
+                <img src={Intellij} alt="" className={style.logo2} />
+              </div>
+              <div className={style.column2}>
+                <img src={Pycharm} alt="" className={style.logo2} />
+              </div>
+              <div className={style.column2}>
+                <img src={Android} alt="" className={style.logo2} />
+              </div>
+              <div className={style.column2}>
+                <img src={Vst} alt="" className={style.logo2} />
+              </div>
               <br />
-              <hr className={style.nextHorizontal} />
             </p>
+            <br />
+            <br />
           </div>
           <br />
           <br />
-          <div className={style.secondChild}>
-            <img
-              src={Bot}
-              alt="Me"
-              className={style.bot}
-              style={{
-                backgroundColor: "black",
-                borderRadius: 1000,
-              }}
-            />
-          </div>
+          <hr className={style.nextHorizontal} />
         </div>
       </div>
       <div className={style.footerContainer}>

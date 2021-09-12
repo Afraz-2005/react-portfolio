@@ -149,6 +149,17 @@ h3 {
   font-weight: 600;
   padding-bottom: 100px;
 }
+.firstChild h1 {
+  text-align: center;
+  /* margin: 30px; */
+
+  font-family: "Montserrat", sans-serif;
+  color: rgb(153, 25, 63);
+  font-size: calc(10px + 2vw);
+  font-weight: 600;
+  padding-bottom: 100px;
+}
+
 .h12 {
   /* text-shadow: 1px 15px 1px rgb(0, 187, 255); */
   font-family: "Glory", sans-serif !important;
@@ -164,15 +175,26 @@ h3 {
 }
 .row .column1{
     background-color: rgb(0, 0, 0);
-    border: 2px solid rgb(255, 0, 98);
+    /* border: 2px solid rgb(255, 0, 98); */
     padding: 10px;
     padding-right: 300px;
     border-radius: 10px;
     margin-bottom: 40px;
+    box-shadow: 10px 10px 0px rgb(85, 85, 85);
+}
+.row .column1:hover{
+  box-shadow: 1px 1px 20px 1px rgb(255, 0, 98);
 }
 .column1{
     display: flexbox;
     align-items: center;
+}
+.tools{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .logos{
     width: 40px;
@@ -180,6 +202,14 @@ h3 {
     background-color: rgba(0, 0, 0, 0);
     padding: 5px;
     border-radius: 10px;
+}
+.logo2{
+  max-width: 60px;
+  min-width: 30px;
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  border-radius: 10px;
 }
 .cpp{
     background-color: rgb(255, 118, 250);
@@ -247,6 +277,48 @@ h3 {
     height: 40px;
     border-radius: 20px;
 }
+.ps{
+    background-color: rgb(255, 0, 98);
+    width: 670%;
+    height: 40px;
+    border-radius: 20px;
+}
+.ai{
+    background-color: rgb(255, 204, 0);
+    width: 610%;
+    height: 40px;
+    border-radius: 20px;
+}
+.xd{
+    background-color: rgb(144, 86, 211);
+    width: 560%;
+    height: 40px;
+    border-radius: 20px;
+}
+.fl{
+    background-color: rgb(109, 143, 255);
+    width: 540%;
+    height: 40px;
+    border-radius: 20px;
+}
+.pr{
+    background-color: rgb(255, 134, 54);
+    width: 500%;
+    height: 40px;
+    border-radius: 20px;
+}
+.figma{
+    background-color: rgb(54, 201, 255);
+    width: 600%;
+    height: 40px;
+    border-radius: 20px;
+}
+.lrc{
+    background-color: rgb(209, 72, 255);
+    width: 530%;
+    height: 40px;
+    border-radius: 20px;
+}
 .btn:hover {
   border: 2px solid rgb(0, 255, 208);
   color: rgb(0, 255, 208);
@@ -259,7 +331,7 @@ h3 {
 .about,
 .aboutInfo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -277,7 +349,6 @@ h3 {
   margin-top: 100px;
   margin-left: 20px;
   margin-right: 20px;
-  border-left: 2px solid rgb(255, 65, 115);
 }
 .nextHorizontal {
   width: 30%;
@@ -290,17 +361,17 @@ h3 {
   border: none;
   border-radius: 20px;
 }
-.firstChild {
-  /* margin-right: 100px; */
-  width: 50%;
-}
+
 @media (max-width: 770px){
   .aboutInfo{
     border-left: none;
   }
 }
-.firstChild h1 {
-  font-size: calc(20px + 3vh);
+
+@media (max-width: 714px){
+  .firstChild h1{
+    font-size: calc(6px + 2vh);
+  }
 }
 .firstChild p {
   font-size: calc(10px + 1vw);
@@ -329,7 +400,7 @@ h3 {
 @media (max-width: 770px) {
   .firstChild p,
   h1 {
-    text-align: justify;
+    text-align: center;
   }
   .firstChild hr {
     display: none;
@@ -397,4 +468,8 @@ html::-webkit-scrollbar-thumb{
 }
 html::-webkit-scrollbar-track{
     background-color: black;
+}
+.logo2:hover{
+  box-shadow: 0px 0px 20px 0px rgb(0, 255, 208);
+  transition: 0.2s;
 }

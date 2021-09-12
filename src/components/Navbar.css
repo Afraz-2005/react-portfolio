@@ -37,6 +37,9 @@
 .logo{
     width: 50px;
     margin-left: 20px;
+    image-rendering: auto;
+    /* image-rendering: crisp-edges; */
+    /* image-rendering: pixelated; */
 }
 li a::after {
     content: '';
@@ -62,7 +65,10 @@ a:hover::after {
     transition: 2.5s;
 }
 .scroll .logo{
-    filter: invert(500);
+    filter: brightness(100%) invert(100%);
+    color: rgb(255, 255, 255) ;
+    transition: 0.5s;
+
 }
 .scroll ul li a{
     color: rgb(255, 255, 255);
