@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Home.module.css";
 import Navbar from "../components/Navbar";
 import MailIcon from "@material-ui/icons/Mail";
@@ -6,8 +6,14 @@ import Illustration from "../images/techlife.png";
 import Bot from "../images/myBot.png";
 import { Link } from "react-router-dom";
 import ScrollIndicator from "../components/ScrollIndicator";
+// import { useEffect } from "react";
 
 export default function Home() {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [])
+
   return (
     <div className={style.hero}>
       <Navbar />
@@ -55,7 +61,7 @@ export default function Home() {
           <div className={style.firstChild}>
             <h1 style={{
               color: 'rgb(255, 65, 115)'
-            }}>About me</h1>
+            }} className={style.fch1}>About me</h1>
             <br />
             <p>
               It's been a while since I started to learn programming. I have

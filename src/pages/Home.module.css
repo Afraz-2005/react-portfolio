@@ -167,7 +167,9 @@ h3 {
 .btn a:hover {
   color: rgb(0, 255, 208);
 }
-
+.child1 h1{
+  text-align: left !important;
+}
 .about,
 .aboutInfo {
   display: flex;
@@ -180,7 +182,7 @@ h3 {
   background-color: black;
   /* color: rgb(241, 255, 254); */
   /* line-height: 1.4em; */
-  color: rgb(105, 255, 235);
+  color: rgb(162, 255, 238);
 
 }
 .about {
@@ -213,7 +215,7 @@ h3 {
     border-left: none;
   }
 }
-.firstChild h1 {
+.firstChild .fch1 {
   font-size: calc(20px + 3vh);
   color: rgb(255, 0, 76) !important;
 }
@@ -227,7 +229,7 @@ h3 {
   }
   @media (max-width: 314px) {
     .firstChild p,
-    .firstChild h1 {
+    .firstChild .fch1 {
       text-align: center !important;
     }
   }
@@ -243,7 +245,7 @@ h3 {
 }
 @media (max-width: 770px) {
   .firstChild p,
-  h1 {
+  .fch1 {
     text-align: justify;
   }
   .firstChild hr {
@@ -313,3 +315,4 @@ html::-webkit-scrollbar-thumb{
 html::-webkit-scrollbar-track{
     background-color: black;
 }
+html {overflow: -moz-scrollbars-none;}

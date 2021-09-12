@@ -27,10 +27,17 @@ import Filmora from "../images/filmora.png";
 import Figma from "../images/figma.png";
 import Pr from "../images/pr.png";
 import Lrc from "../images/lrc.png"
+import React, { useEffect } from "react";
+
 
 import ScrollIndicator from "../components/ScrollIndicator";
 
 export default function Skill() {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [])
+
   return (
     <div className={style.hero}>
       <Navbar />
