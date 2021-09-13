@@ -5,6 +5,7 @@ import Skill from "./pages/Skill";
 import { useState, useEffect } from "react";
 import HashLoader from "react-spinners/HashLoader";
 import style from './App.module.css';
+import'./app.css';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -24,7 +25,7 @@ function App() {
           display: 'flex',
           justifyContent: 'center',}}>
           <div className='spinner'>
-            <HashLoader color={"aqua"} loading={loading} size={150} />
+            <HashLoader color={"FF2442"} loading={loading} size={150} />
           </div>
         </div>
       ) : (

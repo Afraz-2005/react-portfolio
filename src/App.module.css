@@ -10,13 +10,13 @@
   text-align: center;
 }
 HashLoader{
-  margin: 0;
+  margin: 0;  
 }
 .App{
   background-color: rgb(19, 25, 29);
   height: 100vh;
-  color: aqua;
 }
 .spinnerContainer{
   padding-top: 50vh;
 }
+
