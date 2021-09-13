@@ -31,6 +31,7 @@ import React, { useEffect } from "react";
 
 import ScrollIndicator from "../components/ScrollIndicator";
 
+
 export default function Skill() {
 
   useEffect(() => {

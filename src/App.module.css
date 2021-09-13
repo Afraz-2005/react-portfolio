@@ -1,0 +1,22 @@
+
+.spinnerContainer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.spinner{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+HashLoader{
+  margin: 0;
+}
+.App{
+  background-color: rgb(19, 25, 29);
+  height: 100vh;
+  color: aqua;
+}
+.spinnerContainer{
+  padding-top: 50vh;
+}
