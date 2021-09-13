@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import Skill from "./pages/Skill";
 import { useState, useEffect } from "react";
 import HashLoader from "react-spinners/HashLoader";
-import style from './App.module.css';
-import'./app.css';
+import style from "./App.module.css";
+
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -20,11 +20,15 @@ function App() {
   return (
     <div className={style.App}>
       {loading ? (
-        <div className={style.spinnerContainer} style={{
-          textAlign: 'center',
-          display: 'flex',
-          justifyContent: 'center',}}>
-          <div className='spinner'>
+        <div
+          className={style.spinnerContainer}
+          style={{
+            textAlign: "center",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <div className="spinner">
             <HashLoader color={"FF2442"} loading={loading} size={150} />
           </div>
         </div>
@@ -33,7 +37,7 @@ function App() {
           <div>
             <Navbar />
             <Switch>
-              <Route path="/" component={Home} exact/>
+              <Route path="/" component={Home} exact />
               <Route path="/skills" component={Skill} />
               <Route component={Error} />
             </Switch>
