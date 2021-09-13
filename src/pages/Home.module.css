@@ -25,13 +25,14 @@ html {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to right top,
 
       rgba(165, 17, 74, 0.987), rgba(32, 187, 159, 0.987),rgb(33, 39, 214)
 
-    );
+    ); */
     /* url(../images/bg1.png); */
+  background-image: url(../images/bgGrad.png);
   background-repeat: no-repeat;
   min-height: 100vh;
   max-width: 100%;
@@ -50,7 +51,7 @@ html {
   text-shadow: 2px 2px 3px rgb(96, 105, 135);
 }
 .h1 {
-  color: rgb(149, 255, 218);
+  color: rgb(117, 255, 218);
   font-size: calc(20px + 1vw);
   font-weight: 700;
   text-shadow: 2px 2px 6px rgb(96, 105, 135);
@@ -90,10 +91,13 @@ h3 {
   text-shadow: 2px 2px 4px rgb(96, 105, 135);
 }
 .iconText {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: calc(10px + 1vw);
-  text-shadow: 2px 2px 4px rgb(96, 105, 135);
+  /* text-shadow: 2px 2px 4px rgb(96, 105, 135); */
 
+}
+.child1{
+  z-index: 2 !important;
 }
 .icons,
 .childs {
@@ -126,7 +130,7 @@ h3 {
 }
 
 .human {
-  filter: invert(200);
+  /* filter: invert(200); */
   transition: 1s;
   max-width: 26vw;
   min-width: 200px;
@@ -139,7 +143,7 @@ h3 {
   flex-direction: column;
   flex-wrap: wrap;
   min-height: 100vh !important;
-  box-shadow: 2px 2px 60px 20px #ff076695;
+  /* box-shadow: 2px 2px 60px 20px #ff076695; */
   background-repeat: no-repeat;
   max-width: 100%;
   background-size: cover;
