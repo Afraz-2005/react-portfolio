@@ -14,7 +14,6 @@ import Reactnative from "../images/rn.png";
 // import Electron from "../images/electron.png";
 import Particles from "react-particles-js";
 
-
 import Vscode from "../images/vscode.png";
 import Intellij from "../images/intellij.png";
 import Android from "../images/android.png";
@@ -27,23 +26,20 @@ import Xd from "../images/xd.png";
 import Filmora from "../images/filmora.png";
 import Figma from "../images/figma.png";
 import Pr from "../images/pr.png";
-import Lrc from "../images/lrc.png"
+import Lrc from "../images/lrc.png";
 import React, { useEffect } from "react";
-
 
 import ScrollIndicator from "../components/ScrollIndicator";
 
-
 export default function Skill() {
-
   useEffect(() => {
-    window.scrollTo(0,0);
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={style.hero}>
       <Navbar />
-      <ScrollIndicator/>
+      <ScrollIndicator />
       <div className={style.banner}>
         <div className={style.child1}>
           <h2 className={style.h2}>Hey!</h2>
@@ -66,11 +62,172 @@ export default function Skill() {
       </div>
       <div className={style.reside}>
         <div className={style.info}>
-        <Particles className={style.particles}
+          <Particles
+            className={style.particles}
+            params={{
+              particles: {
+                number: {
+                  value: 150,
+                  density: {
+                    enable: true,
+                    value_area: 1000,
+                  },
+                },
+                color: {
+                  value: ["#FC427B", "#55E6C1"],
+                },
+                shape: {
+                  type: "circle",
+                  stroke: {
+                    width: 0,
+                    color: "#b6b2b2",
+                  },
+                },
+                opacity: {
+                  value: 0.5211089197812949,
+                  random: false,
+                  anim: {
+                    enable: true,
+                    speed: 1,
+                    opacity_min: 0.1,
+                    sync: false,
+                  },
+                },
+                size: {
+                  value: 8.017060304327615,
+                  random: true,
+                  anim: {
+                    enable: true,
+                    speed: 12.181158184520175,
+                    size_min: 0.1,
+                    sync: true,
+                  },
+                },
+                line_linked: {
+                  enable: false,
+                  distance: 150,
+                  color: "#c8c8c8",
+                  opacity: 0.4,
+                  width: 1,
+                },
+                move: {
+                  enable: true,
+                  speed: 1,
+                  direction: "none",
+                  random: false,
+                  straight: false,
+                  out_mode: "bounce",
+                  bounce: false,
+                  attract: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 1200,
+                  },
+                },
+              },
+              interactivity: {
+                detect_on: "canvas",
+                events: {
+                  onhover: {
+                    enable: true,
+                    mode: "repulse",
+                  },
+                  onclick: {
+                    enable: false,
+                    mode: "push",
+                  },
+                  resize: true,
+                },
+                modes: {
+                  grab: {
+                    distance: 400,
+                    line_linked: {
+                      opacity: 1,
+                    },
+                  },
+                  bubble: {
+                    distance: 400,
+                    size: 40,
+                    duration: 2,
+                    opacity: 8,
+                    speed: 3,
+                  },
+                  repulse: {
+                    distance: 200,
+                    duration: 0.4,
+                  },
+                  push: {
+                    particles_nb: 4,
+                  },
+                  remove: {
+                    particles_nb: 2,
+                  },
+                },
+              },
+              retina_detect: true,
+            }}
+          />
+
+          <div className={style.h12}>
+            <h1>Programming</h1>
+            <div className={style.row}>
+              <div className={style.column1}>
+                <div className={style.cpp}>
+                  <img src={Cpp} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.cs}>
+                  <img src={Csharp} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.java}>
+                  <img src={Java} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.py}>
+                  <img src={Python} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.html}>
+                  <img src={Html} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.css}>
+                  <img src={Css} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.rn}>
+                  <img src={Reactnative} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.js}>
+                  <img src={Js} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.bs}>
+                  <img src={Bs} alt="C++" className={style.logos} />
+                </div>
+              </div>
+              <div className={style.column1}>
+                <div className={style.rjs}>
+                  <img src={Reactjs} alt="C++" className={style.logos} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <Particles className={style.particles}
               params={{
                 "particles": {
                   "number": {
-                    "value": 80,
+                    "value":100,
                     "density": {
                       "enable": true,
                       "value_area": 1000
@@ -107,7 +264,7 @@ export default function Skill() {
                     }
                   },
                   "line_linked": {
-                    "enable": true,
+                    "enable": false,
                     "distance": 150,
                     "color": "#c8c8c8",
                     "opacity": 0.4,
@@ -170,63 +327,6 @@ export default function Skill() {
                 "retina_detect": true
               }}
             />
-
-
-          <div className={style.h12}>
-            <h1>Programming</h1>
-            <div className={style.row}>
-              <div className={style.column1}>
-                <div className={style.cpp}>
-                  <img src={Cpp} alt="C++" className={style.logos} />
-                </div>
-              </div>
-              <div className={style.column1}>
-                <div className={style.cs}>
-                  <img src={Csharp} alt="C++" className={style.logos} />
-                </div>
-              </div>
-              <div className={style.column1}>
-                <div className={style.java}>
-                  <img src={Java} alt="C++" className={style.logos} />
-                </div>
-              </div>
-              <div className={style.column1}>
-                <div className={style.py}>
-                  <img src={Python} alt="C++" className={style.logos} />
-                </div>
-              </div>
-              <div className={style.column1}>
-                <div className={style.html}>
-                  <img src={Html} alt="C++" className={style.logos} />
-                </div>
-              </div>
-              <div className={style.column1}>
-                <div className={style.css}>
-                  <img src={Css} alt="C++" className={style.logos} />
-                </div>
-              </div>
-              <div className={style.column1}>
-                <div className={style.rn}>
-                  <img src={Reactnative} alt="C++" className={style.logos} />
-                </div>
-              </div>
-              <div className={style.column1}>
-                <div className={style.js}>
-                  <img src={Js} alt="C++" className={style.logos} />
-                </div>
-              </div>
-              <div className={style.column1}>
-                <div className={style.bs}>
-                  <img src={Bs} alt="C++" className={style.logos} />
-                </div>
-              </div>
-              <div className={style.column1}>
-                <div className={style.rjs}>
-                  <img src={Reactjs} alt="C++" className={style.logos} />
-                </div>
-              </div>
-            </div>
-          </div>
           <div className={style.h12}>
             <h1>Graphics and UI designing</h1>
             <div className={style.row}>
@@ -266,7 +366,8 @@ export default function Skill() {
                 </div>
               </div>
             </div>
-            <br /><br />
+            <br />
+            <br />
           </div>
         </div>
       </div>

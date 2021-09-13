@@ -193,6 +193,8 @@ canvas {
   font-family: "Glory", sans-serif !important;
   align-items: center;
   margin-top: 10vh;
+  overflow: hidden;
+  position: sticky;
 }
 .row{
     display: flex;
@@ -364,6 +366,7 @@ canvas {
   background-color: rgb(18, 22, 29);
   color: rgb(31, 255, 244);
   /* line-height: 1.4em; */
+  position: relative;
 }
 .about {
   min-height: 120vh;
