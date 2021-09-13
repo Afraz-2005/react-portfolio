@@ -7,17 +7,17 @@ import Bot from "../images/myBot.png";
 import { Link } from "react-router-dom";
 import ScrollIndicator from "../components/ScrollIndicator";
 // import { useEffect } from "react";
+import Particles from "react-particles-js";
 
 export default function Home() {
-
   useEffect(() => {
-    window.scrollTo(0,0);
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={style.hero}>
       <Navbar />
-      <ScrollIndicator/>
+      <ScrollIndicator />
       <div className={style.banner}>
         <div className={style.child1}>
           <h2 className={style.h2}>Hi There,</h2>
@@ -42,7 +42,8 @@ export default function Home() {
               <MailIcon className={style.icon} />
               <p className={style.iconText}>mahbirafraz2007@gmail.com</p>
             </div>
-            <br /><br />
+            <br />
+            <br />
           </div>
         </div>
       </div>
@@ -59,9 +60,14 @@ export default function Home() {
       <div className={style.about}>
         <div className={style.aboutInfo}>
           <div className={style.firstChild}>
-            <h1 style={{
-              color: 'rgb(255, 65, 115)'
-            }} className={style.fch1}>About me</h1>
+            <h1
+              style={{
+                color: "rgb(255, 65, 115)",
+              }}
+              className={style.fch1}
+            >
+              About me
+            </h1>
             <br />
             <p>
               It's been a while since I started to learn programming. I have
@@ -71,11 +77,13 @@ export default function Home() {
               JavaScript and app frameworks like Flutter, React JS and React
               Native. I am more advanced in Web development (Frontend) and a bit
               at the backend. Recently learned Sass, Node js and React Native.
-              Trying my best to achieve my goal as a software engineer.{" "}
-              <br /><br />
+              Trying my best to achieve my goal as a software engineer. <br />
+              <br />
               <hr className={style.nextHorizontal} />
             </p>
-          </div><br /><br />
+          </div>
+          <br />
+          <br />
           <div className={style.secondChild}>
             <img
               src={Bot}
@@ -92,9 +100,9 @@ export default function Home() {
       <div className={style.footerContainer}>
         <footer className={style.footer}>
           <div>
-          <div className={style.child1}>
-            <p>Made by Imam Mahbir Afraz 2021 &copy; All rights researved</p>
-          </div>
+            <div className={style.child1}>
+              <p>Made by Imam Mahbir Afraz 2021 &copy; All rights researved</p>
+            </div>
           </div>
           <div className={style.child2}>
             <Link to="/">Home </Link>

@@ -11,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
+  cursor: crosshair;
 }
 html {
   scroll-behavior: smooth;
@@ -139,6 +140,7 @@ h3 {
   max-width: 100%;
   background-size: cover;
   background-position: center;
+  background-color: rgb(255, 255, 255);
 }
 .info {
   flex-direction: column;
@@ -158,11 +160,26 @@ h3 {
   font-family: "Glory", sans-serif !important;
   align-items: center;
   margin-top: 30vh;
+  /* z-index: 4; */
+  top: 0 !important;
+  overflow: hidden;
+  position: sticky;
+
+}
+.particles{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
 }
 .btn:hover {
   border: 2px solid rgb(0, 255, 208);
   color: rgb(0, 255, 208);
   border-radius: 10px;
+
 }
 .btn a:hover {
   color: rgb(0, 255, 208);

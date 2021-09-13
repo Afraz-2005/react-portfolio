@@ -153,6 +153,15 @@ h3 {
   background-size: cover;
   background-position: center;
 }
+.particles{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
 .info {
   flex-direction: column;
   justify-content: center;
@@ -209,6 +218,8 @@ h3 {
     align-items: center;
     margin-left: 10px;
     margin-right: 10px;
+    z-index: 1 !important;
+
 }
 .tools{
   display: flex;
