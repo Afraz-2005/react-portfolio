@@ -443,7 +443,7 @@ canvas {
 .footerContainer {
   display: flex;
   justify-content: center;
-  background-color: rgb(197, 36, 71);
+  background-color: rgb(220, 54, 90);
   color: white;
 }
 .footer div {
@@ -486,6 +486,7 @@ canvas {
         margin-top: 10px;
     }
 }
+
 html::-webkit-scrollbar{
     width: 10px;
 }
@@ -499,4 +500,12 @@ html::-webkit-scrollbar-track{
 .logo2:hover{
   box-shadow: 0px 0px 20px 0px rgb(0, 255, 208);
   transition: 0.2s;
+}
+.child1a{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 0px;
+  font-family: "Montserrat", sans-serif;
+
 }

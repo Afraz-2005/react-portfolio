@@ -65,7 +65,7 @@ a:hover::after {
 .scroll {
     background-color: hsl(0, 0%, 0%);
     transition: 2.5s;
-    z-index: 10;
+    z-index: 10 !important;
 }
 .scroll .logo{
     filter: brightness(100%) invert(100%);
@@ -85,7 +85,7 @@ a:hover::after {
     height: 50px;
     align-items: center;
     position: fixed;
-    z-index: 2;
+    z-index: 10 !important;
     bottom: 0;
     width: 100%;
     display: flex;
