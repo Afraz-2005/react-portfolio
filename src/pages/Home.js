@@ -8,121 +8,125 @@ import { Link } from "react-router-dom";
 import ScrollIndicator from "../components/ScrollIndicator";
 // import { useEffect } from "react";
 import Particles from "react-particles-js";
+// import Brightness4Icon from "@material-ui/icons/Brightness4";
 
-export default function Home() {
+export default function Home(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+
 
   return (
     <div className={style.hero}>
       <Navbar />
       <ScrollIndicator />
       <div className={style.banner}>
-      <Particles className={style.particles}
-              params={{
-                "particles": {
-                  "number": {
-                    "value": 100,
-                    "density": {
-                      "enable": true,
-                      "value_area": 1000
-                    }
-                  },
-                  "color": {
-                    "value": ["#FC427B","#55E6C1"]
-                  },
-                  "shape": {
-                    "type": "circle",
-                    "stroke": {
-                      "width": 0,
-                      "color": "#b6b2b2"
-                    }
-                  },
-                  "opacity": {
-                    "value": 0.5211089197812949,
-                    "random": false,
-                    "anim": {
-                      "enable": true,
-                      "speed": 1,
-                      "opacity_min": 0.1,
-                      "sync": false
-                    }
-                  },
-                  "size": {
-                    "value": 8.017060304327615,
-                    "random": true,
-                    "anim": {
-                      "enable": true,
-                      "speed": 12.181158184520175,
-                      "size_min": 0.1,
-                      "sync": true
-                    }
-                  },
-                  "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#c8c8c8",
-                    "opacity": 0.4,
-                    "width": 1
-                  },
-                  "move": {
-                    "enable": true,
-                    "speed": 1,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "bounce",
-                    "bounce": false,
-                    "attract": {
-                      "enable": false,
-                      "rotateX": 600,
-                      "rotateY": 1200
-                    }
-                  }
+        <Particles
+          className={style.particles}
+          params={{
+            particles: {
+              number: {
+                value: 20,
+                density: {
+                  enable: true,
+                  value_area: 800,
                 },
-                "interactivity": {
-                  "detect_on": "canvas",
-                  "events": {
-                    "onhover": {
-                      "enable": true,
-                      "mode": "repulse"
-                    },
-                    "onclick": {
-                      "enable": false,
-                      "mode": "push"
-                    },
-                    "resize": true
-                  },
-                  "modes": {
-                    "grab": {
-                      "distance": 400,
-                      "line_linked": {
-                        "opacity": 1
-                      }
-                    },
-                    "bubble": {
-                      "distance": 400,
-                      "size": 40,
-                      "duration": 2,
-                      "opacity": 8,
-                      "speed": 3
-                    },
-                    "repulse": {
-                      "distance": 200,
-                      "duration": 0.4
-                    },
-                    "push": {
-                      "particles_nb": 4
-                    },
-                    "remove": {
-                      "particles_nb": 2
-                    }
-                  }
+              },
+              color: {
+                value: ["#FC427B", "#55E6C1"],
+              },
+              shape: {
+                type: "circle",
+                stroke: {
+                  width: 0,
+                  color: "#b6b2b2",
                 },
-                "retina_detect": true
-              }}
-            />
+              },
+              opacity: {
+                value: 0.5211089197812949,
+                random: false,
+                anim: {
+                  enable: true,
+                  speed: 1,
+                  opacity_min: 0.1,
+                  sync: false,
+                },
+              },
+              size: {
+                value: 8.017060304327615,
+                random: true,
+                anim: {
+                  enable: true,
+                  speed: 12.181158184520175,
+                  size_min: 0.1,
+                  sync: true,
+                },
+              },
+              line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#c8c8c8",
+                opacity: 0.4,
+                width: 1,
+              },
+              move: {
+                enable: true,
+                speed: 1,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "bounce",
+                bounce: false,
+                attract: {
+                  enable: false,
+                  rotateX: 600,
+                  rotateY: 1200,
+                },
+              },
+            },
+            interactivity: {
+              detect_on: "canvas",
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+                onclick: {
+                  enable: false,
+                  mode: "push",
+                },
+                resize: true,
+              },
+              modes: {
+                grab: {
+                  distance: 400,
+                  line_linked: {
+                    opacity: 1,
+                  },
+                },
+                bubble: {
+                  distance: 400,
+                  size: 40,
+                  duration: 2,
+                  opacity: 8,
+                  speed: 3,
+                },
+                repulse: {
+                  distance: 200,
+                  duration: 0.4,
+                },
+                push: {
+                  particles_nb: 4,
+                },
+                remove: {
+                  particles_nb: 2,
+                },
+              },
+            },
+            retina_detect: true,
+          }}
+        />
         <div className={style.child1}>
           <h2 className={style.h2}>Hi There,</h2>
           <h1 className={style.h1}>I am Afraz</h1>
@@ -133,13 +137,15 @@ export default function Home() {
           <br />
           <p className={style.welcome}>Welcome to my portfolio!!</p>
           <br />
-          <button className={style.btn}>
-            <a href="https://github.com/Afraz-2005" target="_">
-              Learn More
-            </a>
-          </button>
+          <div className={style.btns}>
+            <button className={style.btn}>
+              <a href="https://github.com/Afraz-2005" target="_">
+                Learn More
+              </a>
+            </button>
+          </div>
         </div>
-        <div className={style.child2}>
+        <div className={style.child2a}>
           <img src={Illustration} alt="human" className={style.human} />
           <div className={style.icons}>
             <div className={style.childs}>
@@ -151,119 +157,120 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
       <div className={style.reside}>
         <div className={style.info}>
-        <Particles className={style.particles}
-              params={{
-                "particles": {
-                  "number": {
-                    "value": 100,
-                    "density": {
-                      "enable": true,
-                      "value_area": 1000
-                    }
+          <Particles
+            className={style.particles}
+            params={{
+              particles: {
+                number: {
+                  value: 100,
+                  density: {
+                    enable: true,
+                    value_area: 1000,
                   },
-                  "color": {
-                    "value": ["#FC427B","#55E6C1"]
-                  },
-                  "shape": {
-                    "type": "circle",
-                    "stroke": {
-                      "width": 0,
-                      "color": "#b6b2b2"
-                    }
-                  },
-                  "opacity": {
-                    "value": 0.5211089197812949,
-                    "random": false,
-                    "anim": {
-                      "enable": true,
-                      "speed": 1,
-                      "opacity_min": 0.1,
-                      "sync": false
-                    }
-                  },
-                  "size": {
-                    "value": 8.017060304327615,
-                    "random": true,
-                    "anim": {
-                      "enable": true,
-                      "speed": 12.181158184520175,
-                      "size_min": 0.1,
-                      "sync": true
-                    }
-                  },
-                  "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#c8c8c8",
-                    "opacity": 0.4,
-                    "width": 1
-                  },
-                  "move": {
-                    "enable": true,
-                    "speed": 1,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "bounce",
-                    "bounce": false,
-                    "attract": {
-                      "enable": false,
-                      "rotateX": 600,
-                      "rotateY": 1200
-                    }
-                  }
                 },
-                "interactivity": {
-                  "detect_on": "canvas",
-                  "events": {
-                    "onhover": {
-                      "enable": true,
-                      "mode": "repulse"
-                    },
-                    "onclick": {
-                      "enable": false,
-                      "mode": "push"
-                    },
-                    "resize": true
-                  },
-                  "modes": {
-                    "grab": {
-                      "distance": 400,
-                      "line_linked": {
-                        "opacity": 1
-                      }
-                    },
-                    "bubble": {
-                      "distance": 400,
-                      "size": 40,
-                      "duration": 2,
-                      "opacity": 8,
-                      "speed": 3
-                    },
-                    "repulse": {
-                      "distance": 200,
-                      "duration": 0.4
-                    },
-                    "push": {
-                      "particles_nb": 4
-                    },
-                    "remove": {
-                      "particles_nb": 2
-                    }
-                  }
+                color: {
+                  value: ["#FC427B", "#55E6C1"],
                 },
-                "retina_detect": true
-              }}
-            />
+                shape: {
+                  type: "circle",
+                  stroke: {
+                    width: 0,
+                    color: "#b6b2b2",
+                  },
+                },
+                opacity: {
+                  value: 0.5211089197812949,
+                  random: false,
+                  anim: {
+                    enable: true,
+                    speed: 1,
+                    opacity_min: 0.1,
+                    sync: false,
+                  },
+                },
+                size: {
+                  value: 8.017060304327615,
+                  random: true,
+                  anim: {
+                    enable: true,
+                    speed: 12.181158184520175,
+                    size_min: 0.1,
+                    sync: true,
+                  },
+                },
+                line_linked: {
+                  enable: true,
+                  distance: 150,
+                  color: "#c8c8c8",
+                  opacity: 0.4,
+                  width: 1,
+                },
+                move: {
+                  enable: true,
+                  speed: 1,
+                  direction: "none",
+                  random: false,
+                  straight: false,
+                  out_mode: "bounce",
+                  bounce: false,
+                  attract: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 1200,
+                  },
+                },
+              },
+              interactivity: {
+                detect_on: "canvas",
+                events: {
+                  onhover: {
+                    enable: true,
+                    mode: "repulse",
+                  },
+                  onclick: {
+                    enable: false,
+                    mode: "push",
+                  },
+                  resize: true,
+                },
+                modes: {
+                  grab: {
+                    distance: 400,
+                    line_linked: {
+                      opacity: 1,
+                    },
+                  },
+                  bubble: {
+                    distance: 400,
+                    size: 40,
+                    duration: 2,
+                    opacity: 8,
+                    speed: 3,
+                  },
+                  repulse: {
+                    distance: 200,
+                    duration: 0.4,
+                  },
+                  push: {
+                    particles_nb: 4,
+                  },
+                  remove: {
+                    particles_nb: 2,
+                  },
+                },
+              },
+              retina_detect: true,
+            }}
+          />
 
           <h1 className={style.h12}>
             Born - 2005 <br />
             Country - Bangladesh <br />
+            Profession - Student <br />
             City - Dhaka <br />
-            Age - 16+ <br />
           </h1>
         </div>
       </div>

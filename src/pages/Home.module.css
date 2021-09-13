@@ -32,12 +32,20 @@ html {
 
     ); */
     /* url(../images/bg1.png); */
-  background-image: url(../images/bgGrad.png);
+  background-image: url(../images/darkbg.png);
   background-repeat: no-repeat;
   min-height: 100vh;
   max-width: 100%;
   background-size: cover;
   background-position: center;
+}
+.btns{
+  display: inline-flex;
+  align-items: center;
+
+}
+.banner2{
+  background-image: none;
 }
 
 .child1 {
@@ -91,13 +99,19 @@ h3 {
   text-shadow: 2px 2px 4px rgb(96, 105, 135);
 }
 .iconText {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: calc(10px + 1vw);
   /* text-shadow: 2px 2px 4px rgb(96, 105, 135); */
 
 }
 .child1{
   z-index: 2 !important;
+}
+.child2a{
+  z-index: 2 !important;
+  background-color: #13191d;
+  padding: 5px;
+  border-radius: 30px;
 }
 .icons,
 .childs {
@@ -130,7 +144,7 @@ h3 {
 }
 
 .human {
-  /* filter: invert(200); */
+  filter: invert(200);
   transition: 1s;
   max-width: 26vw;
   min-width: 200px;
