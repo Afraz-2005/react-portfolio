@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 .spinnerContainer{
   display: flex;
   justify-content: center;

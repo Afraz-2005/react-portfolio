@@ -12,6 +12,10 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
   cursor: crosshair;
+  scroll-behavior: smooth;
+}
+.hero{
+  scroll-behavior: smooth;
 }
 html {
   scroll-behavior: smooth;

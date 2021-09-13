@@ -67,7 +67,7 @@ export default function Skill() {
             params={{
               particles: {
                 number: {
-                  value: 150,
+                  value: 100,
                   density: {
                     enable: true,
                     value_area: 1000,
@@ -227,7 +227,7 @@ export default function Skill() {
               params={{
                 "particles": {
                   "number": {
-                    "value":100,
+                    "value":150,
                     "density": {
                       "enable": true,
                       "value_area": 1000
