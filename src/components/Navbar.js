@@ -38,7 +38,7 @@ class Navbar extends React.Component {
               <Link to="./skills">Skills</Link>
             </li>
             <li>
-              <Link to="./">Projects</Link>
+              <Link to="./projects">Projects</Link>
             </li>
             <li>
               <Link to="./">Contact</Link>
