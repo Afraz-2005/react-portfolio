@@ -23,7 +23,7 @@ class Navbar extends React.Component {
     } else {
       document.querySelector(".navbar").className = "navbar";
     }
-  }
+  };
 
   render() {
     return (
@@ -50,29 +50,29 @@ class Navbar extends React.Component {
           <br />
         </div>
         <div className="smallnav">
-            <ul>
-              <li>
-                <Link to="./">
-                  <HomeIcon />
-                </Link>
-              </li>
-              <li>
-                <Link to="./skills">
-                  <SettingsIcon />
-                </Link>
-              </li>
-              <li>
-                <Link to="./">
-                  <FormatListBulletedIcon />
-                </Link>
-              </li>
-              <li>
-                <Link to="./">
-                  <ContactsIcon />
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <ul>
+            <li>
+              <Link to="./">
+                <HomeIcon />
+              </Link>
+            </li>
+            <li>
+              <Link to="./skills">
+                <SettingsIcon />
+              </Link>
+            </li>
+            <li>
+              <Link to="./projects">
+                <FormatListBulletedIcon />
+              </Link>
+            </li>
+            <li>
+              <Link to="./">
+                <ContactsIcon />
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     );
   }
