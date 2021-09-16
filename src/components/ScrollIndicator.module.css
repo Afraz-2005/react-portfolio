@@ -16,6 +16,7 @@
   );
   width: 4px;
   border-radius: 100px;
+  transition: 0.7s;
 }
 html{
   scroll-behavior: smooth;

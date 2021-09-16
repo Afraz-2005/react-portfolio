@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import HashLoader from "react-spinners/HashLoader";
 import style from "./App.module.css";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
               <Route path="/" component={Home} exact />
               <Route path="/skills" component={Skill} />
               <Route path="/projects" component={Projects} />
+              <Route path="/contact" component={Contact} />
               <Route component={Error} />
             </Switch>
             {/* <Footer/> */}

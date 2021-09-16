@@ -354,7 +354,7 @@ export default class Projects extends Component {
               <Link to="/">Home </Link>
               <Link to="./skills">Skills </Link>
               <Link to="./projects">Project </Link>
-              <Link to="./skills">Contact</Link>
+              <Link to="./contact">Contact</Link>
             </div>
           </footer>
         </div>

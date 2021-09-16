@@ -522,8 +522,8 @@ export default function Skill() {
           <div className={style.child2}>
             <Link to="/">Home </Link>
             <Link to="./skills">Skills </Link>
-            <Link to="./skills">Project </Link>
-            <Link to="./skills">Contact</Link>
+            <Link to="./projects">Project </Link>
+            <Link to="./contact">Contact</Link>
           </div>
         </footer>
       </div>

@@ -30,7 +30,7 @@
 .bannerChild{
   z-index: 2;
 }
-.banner button{
+.banner button, .btn{
     border: 2px solid cyan;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0);    
@@ -38,19 +38,23 @@
     border-radius: 10px;
     transition: 0.5s;
 }
-.banner button:hover {
+.btn{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.banner button:hover , .btn:hover{
     border: 2px solid rgb(255, 0, 111);
     padding: 20px;
     background-color: rgba(0, 0, 0, 0);    
     margin-top: 25px;
     border-radius: 10px;
 }
-.banner button a{
+.banner button a , .btn a{
     color: cyan;
     text-decoration: none;
     transition: 0.5s;
 }
-.banner button a:hover{
+.banner button a:hover, .btn a:hover{
     color: rgb(255, 0, 111);
     text-decoration: none;
 }
@@ -62,7 +66,7 @@
 /* showcase start */
 .reside {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column;
     flex-wrap: wrap;
     min-height: 100vh !important;
     /* box-shadow: 2px 2px 60px 20px #ff076695; */
@@ -92,7 +96,7 @@
     font-family: "Glory", sans-serif !important;
     display: flex;
     justify-content: center;
-    flex-direction: column !important;
+    flex-direction: column;
   
   }
   .h12 {
@@ -101,47 +105,39 @@
     align-items: center;
     margin-top: 20vh;
     overflow: hidden;
-    /* position: sticky; */
+    position: sticky;
     margin-bottom: 50vh;
     color: white;
     text-align: center;
   }
-  /* .row{
+  .row{
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      flex-direction: row;
       align-items: center;
-      flex-direction: column !important;
-
-  } */
-  .form{
-    display: flex;
-    flex-direction: column !important;
-    
   }
-  .column1{
+  .row .column1{
       background-color: rgb(0, 0, 0);
       /* border: 2px solid rgb(255, 0, 98); */
-      padding: calc(50px + 10vw);
+      padding: calc(5px + 2vw);
 
-      margin-bottom: 40px;
+      margin-bottom: 80px;
       box-shadow: 10px 10px 0px rgb(85, 85, 85);
       text-align: center ;
-      display: flex;
+      display: flexbox;
       justify-content: center;
-      flex-direction: column !important;
+      transition: 0.5s;
   }
-  .column1:hover{
+  .row .column1:hover{
     box-shadow: 1px 1px 20px 1px rgb(255, 0, 98);
   }
   .column1{
       display: flexbox;
       align-items: center;
-      margin-left: 15px;
-      margin-right: 15px;
+      /* margin-left: 15px;
+      margin-right: 15px; */
       z-index: 1 !important;
-      flex-direction: column !important;
-
   
   }
   .work{
@@ -151,11 +147,6 @@
   .java{
       display: flex;
       justify-content: center;
-  }
-  .contactform{
-    display: flex;
-    justify-content: center;
-    flex-direction: column !important;
   }
   .tools{
     display: flex;
@@ -191,7 +182,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     flex-shrink: inherit;
     flex-grow: inherit;
@@ -202,11 +193,11 @@
   
   }
   .about {
-    min-height: 190vh;
+    min-height: 90vh;
     box-shadow: 2px 2px 40px 2px rgb(255, 0, 111);
   }
   .aboutInfo {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 20px;
     margin-right: 20px;
     /* border-left: 2px solid rgb(255, 0, 76); */
@@ -250,7 +241,6 @@
       }
     }
   }
-  
   .bot {
 
     /* border-top-color: rgb(255, 0, 89); */
@@ -372,5 +362,65 @@
   .secondChild{
     margin-top: 50px;
     margin-bottom: 30px;
+  }
+}
+
+
+.contactform{
+  line-height: 2em;
+}
+.gmail{
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: black;
+  outline: none;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+
+}
+.name{
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: black;
+  outline: none;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.description{
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: rgb(96, 96, 121);
+  color: white;
+}
+.submit{
+  padding: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  color: white;
+}
+.submit a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 514px) {
+  .column1{
+    width: 100vw;
+    box-shadow: none;
+  }
+  .submit{
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

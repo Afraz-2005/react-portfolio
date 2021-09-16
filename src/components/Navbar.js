@@ -41,7 +41,7 @@ class Navbar extends React.Component {
               <Link to="./projects">Projects</Link>
             </li>
             <li>
-              <Link to="./">Contact</Link>
+              <Link to="./contact">Contact</Link>
             </li>
           </ul>
           <br />
@@ -67,7 +67,7 @@ class Navbar extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="./">
+              <Link to="./contact">
                 <ContactsIcon />
               </Link>
             </li>
