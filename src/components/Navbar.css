@@ -68,7 +68,7 @@ a:hover::after {
     z-index: 10 !important;
 }
 .scroll .logo{
-    filter: brightness(100%) invert(100%);
+    filter: brightness(100%);
     color: rgb(255, 255, 255) ;
     transition: 0.5s;
 
@@ -81,7 +81,7 @@ a:hover::after {
     transition: 2.5s;
 }
 .smallnav{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.638);
     height: 50px;
     align-items: center;
     position: fixed;
@@ -99,5 +99,7 @@ a:hover::after {
     }
     .smallnav{
         display: flex !important;
+        filter: brightness(100%);
+        backdrop-filter: blur(3px);
     }
 }
