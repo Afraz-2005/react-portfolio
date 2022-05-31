@@ -516,7 +516,7 @@ export default function Skill() {
         <footer className={style.footer}>
           <div>
             <div className={style.child1a}>
-              <p>Made by Imam Mahbir Afraz 2021 &copy; All rights researved</p>
+              <p>Made by Imam Mahbir Afraz 2022 &copy; All rights researved</p>
             </div>
           </div>
           <div className={style.child2}>

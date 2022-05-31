@@ -286,7 +286,7 @@ export default class Contact extends Component {
             <div>
               <div className={style.child1}>
                 <p>
-                  Made by Imam Mahbir Afraz 2021 &copy; All rights researved
+                  Made by Imam Mahbir Afraz 2022 &copy; All rights researved
                 </p>
               </div>
             </div>

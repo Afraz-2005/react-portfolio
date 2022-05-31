@@ -267,9 +267,9 @@ export default function Home(props) {
           />
 
           <h1 className={style.h12}>
-            Person - Undefined <br />
-            Country - Bangladesh <br />
-            Profession - Student <br />
+            A Tech Enthusiast <br />
+            From Bangladesh <br />
+            Currently an O'level Candidate <br />
             {/* City - Dhaka <br /> */}
           </h1>
         </div>
@@ -318,7 +318,7 @@ export default function Home(props) {
         <footer className={style.footer}>
           <div>
             <div className={style.child1}>
-              <p>Made by Imam Mahbir Afraz 2021 &copy; All rights researved</p>
+              <p>Made by Imam Mahbir Afraz 2022 &copy; All rights researved</p>
             </div>
           </div>
           <div className={style.child2}>

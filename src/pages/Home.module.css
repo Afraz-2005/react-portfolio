@@ -53,30 +53,30 @@ html {
   margin-right: 20px;
 }
 .h2 {
-  color: rgb(255, 219, 73);
+  color: rgb(172, 172, 172);
   font-size: calc(16px + 1vw);
   font-weight: 100;
-  text-shadow: 2px 2px 3px rgb(96, 105, 135);
+  /* text-shadow: 2px 2px 3px rgb(96, 105, 135); */
 }
 .h1 {
-  color: rgb(117, 255, 218);
+  color: rgb(206, 206, 206);
   font-size: calc(20px + 1vw);
   font-weight: 700;
-  text-shadow: 2px 2px 6px rgb(96, 105, 135);
+  /* text-shadow: 2px 2px 6px rgb(96, 105, 135); */
 
 }
 h3 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: calc(14px + 1vw);
   font-weight: 100;
-  text-shadow: 2px 2px 4px rgb(96, 105, 135);
+  /* text-shadow: 2px 2px 4px rgb(96, 105, 135); */
 
 }
 .welcome {
   font-size: calc(20px + 3vw);
-  color: rgb(11, 255, 248);
-  font-family: "Allison", cursive;
-  text-shadow: 2px 2px 4px rgb(96, 105, 135);
+  color: rgb(11, 166, 255);
+  font-family: "Harland Roselyn", cursive;
+  /* text-shadow: 2px 2px 4px rgb(96, 105, 135); */
 
 }
 .hr {
@@ -84,12 +84,12 @@ h3 {
   height: 10px;
   background-image: linear-gradient(
     to right,
-    rgb(172, 249, 255),
-    rgb(0, 255, 145)
+    rgb(253, 0, 76),
+    rgb(38, 0, 255)
   );
   border: none;
   border-radius: 20px;
-  box-shadow: 2px 2px 6px rgb(96, 105, 135);
+  /* box-shadow: 2px 2px 6px rgb(96, 105, 135); */
 
 }
 .icon {
