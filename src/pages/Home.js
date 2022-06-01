@@ -34,7 +34,7 @@ export default function Home(props) {
                 },
               },
               color: {
-                value: ["#FC427B", "#55E6C1"],
+                value: ["#3498db","#9b59b6"],
               },
               shape: {
                 type: "circle",
