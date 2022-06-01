@@ -30,7 +30,7 @@ export default class Contact extends Component {
                   },
                 },
                 color: {
-                  value: ["#FC427B", "#55E6C1"],
+                  value: ["#3498db","#9b59b6"],
                 },
                 shape: {
                   type: "circle",
@@ -142,14 +142,14 @@ export default class Contact extends Component {
               params={{
                 particles: {
                   number: {
-                    value: 100,
+                    value: 80,
                     density: {
                       enable: true,
                       value_area: 1000,
                     },
                   },
                   color: {
-                    value: ["#FC427B", "#55E6C1"],
+                    value: ["#3498db","#9b59b6"],
                   },
                   shape: {
                     type: "circle",

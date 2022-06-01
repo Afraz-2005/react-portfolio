@@ -52,7 +52,7 @@ export default function Skill() {
                     }
                   },
                   "color": {
-                    "value": ["#FC427B","#55E6C1"]
+                    "value": ["#3498db","#9b59b6"]
                   },
                   "shape": {
                     "type": "circle",
@@ -178,7 +178,7 @@ export default function Skill() {
                   },
                 },
                 color: {
-                  value: ["#FC427B", "#55E6C1"],
+                  value: ["#3498db","#9b59b6"],
                 },
                 shape: {
                   type: "circle",
@@ -331,14 +331,14 @@ export default function Skill() {
               params={{
                 "particles": {
                   "number": {
-                    "value":150,
+                    "value":100,
                     "density": {
                       "enable": true,
                       "value_area": 1000
                     }
                   },
                   "color": {
-                    "value": ["#FC427B","#55E6C1"]
+                    "value": ["#3498db","#9b59b6"]
                   },
                   "shape": {
                     "type": "circle",
@@ -480,7 +480,7 @@ export default function Skill() {
           <div className={style.firstChild}>
             <h1
               style={{
-                color: "rgb(255, 65, 115)",
+                color: "rgb(225, 173, 255",
               }}
             >
               Tools I use for productivity

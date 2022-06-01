@@ -19,7 +19,7 @@
 }
 .banner h2{
     text-align: center;
-    color: rgb(255, 183, 0);
+    color: rgb(227, 179, 255);
     font-size: calc(20px + 1vw);
 }
 .banner h1{
@@ -31,7 +31,7 @@
   z-index: 2;
 }
 .banner button{
-    border: 2px solid cyan;
+    border: 2px solid rgb(118, 59, 255);
     padding: 20px;
     background-color: rgba(0, 0, 0, 0);    
     margin-top: 25px;
@@ -46,7 +46,7 @@
     border-radius: 10px;
 }
 .banner button a{
-    color: cyan;
+    color: rgb(170, 151, 255);
     text-decoration: none;
     transition: 0.5s;
 }
@@ -83,7 +83,7 @@
     /* margin: 30px; */
   
     font-family: "Montserrat", sans-serif;
-    color: rgb(153, 25, 63);
+    color: rgb(0, 110, 255);
     font-size: calc(10px + 4vw);
     font-weight: 600;
   }
@@ -127,7 +127,7 @@
       justify-content: center;
   }
   .column1:hover{
-    box-shadow: 1px 1px 20px 1px rgb(255, 0, 98);
+    box-shadow: 1px 1px 20px 1px rgb(0, 153, 255);
   }
   .column1{
       display: flexbox;
@@ -189,12 +189,12 @@
     background-color: rgb(18, 22, 29);
     /* color: rgb(241, 255, 254); */
     /* line-height: 1.4em; */
-    color: rgb(0, 247, 255);
+    color: rgb(227, 206, 255);
   
   }
   .about {
     min-height: 190vh;
-    box-shadow: 2px 2px 40px 2px rgb(255, 0, 111);
+    box-shadow: 2px 2px 40px 2px rgb(0, 119, 255);
   }
   .aboutInfo {
     margin-top: 100px;
@@ -224,7 +224,7 @@
   }
   .firstChild .fch1 {
     font-size: calc(20px + 3vh);
-    color: rgb(255, 0, 76) !important;
+    color: rgb(0, 119, 255) !important;
   }
   .firstChild p {
     font-size: calc(10px + 1vw);
@@ -276,9 +276,9 @@
   }
   
   .covid{
-      border: 2px solid rgb(255, 0, 76);
+      border: 2px solid rgb(228, 169, 255);
       text-decoration: none;
-      color: rgb(255, 0, 76);
+      color: rgb(246, 177, 255);
       padding: 15px;
       border-radius: 10px;
       margin-bottom: 100px;
@@ -294,7 +294,7 @@
   .footerContainer {
     display: flex;
     justify-content: center;
-    background-color: rgb(220, 54, 90);
+    background-color: rgb(0, 174, 255);
     color: white;
   }
   .footer div {

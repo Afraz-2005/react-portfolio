@@ -160,7 +160,7 @@ export default function Home(props) {
 
       <div className={style.reside}>
         <div className={style.info}>
-          <Particles
+          {/* <Particles
             className={style.particles}
             params={{
               particles: {
@@ -263,8 +263,8 @@ export default function Home(props) {
                 },
               },
               retina_detect: true,
-            }}
-          />
+            }} */}
+          {/* /> */}
 
           <h1 className={style.h12}>
             A Tech Enthusiast <br />

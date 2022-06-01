@@ -37,7 +37,7 @@ export default class Projects extends Component {
                 },
               },
               color: {
-                value: ["#FC427B", "#55E6C1"],
+                value: ["#3498db","#9b59b6"],
               },
               shape: {
                 type: "circle",
@@ -156,7 +156,7 @@ export default class Projects extends Component {
                     },
                   },
                   color: {
-                    value: ["#FC427B", "#55E6C1"],
+                    value: ["#3498db","#9b59b6"],
                   },
                   shape: {
                     type: "circle",

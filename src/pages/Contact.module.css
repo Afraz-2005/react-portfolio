@@ -19,7 +19,7 @@
 }
 .banner h2{
     text-align: center;
-    color: rgb(255, 183, 0);
+    color: rgb(220, 176, 255);
     font-size: calc(20px + 1vw);
 }
 .banner h1{
@@ -31,7 +31,7 @@
   z-index: 2;
 }
 .banner button, .btn{
-    border: 2px solid cyan;
+    border: 2px solid rgb(216, 209, 255);
     padding: 20px;
     background-color: rgba(0, 0, 0, 0);    
     margin-top: 25px;
@@ -50,7 +50,7 @@
     border-radius: 10px;
 }
 .banner button a , .btn a{
-    color: cyan;
+    color: rgb(216, 199, 255);
     text-decoration: none;
     transition: 0.5s;
 }
@@ -130,7 +130,7 @@
       transition: 0.5s;
   }
   .row .column1:hover{
-    box-shadow: 1px 1px 20px 1px rgb(255, 0, 98);
+    box-shadow: 1px 1px 20px 1px rgb(0, 140, 255);
   }
   .column1{
       display: flexbox;
@@ -189,12 +189,12 @@
     background-color: rgb(18, 22, 29);
     /* color: rgb(241, 255, 254); */
     /* line-height: 1.4em; */
-    color: rgb(0, 247, 255);
+    color: rgb(0, 132, 255);
   
   }
   .about {
     min-height: 90vh;
-    box-shadow: 2px 2px 40px 2px rgb(255, 0, 111);
+    box-shadow: 2px 2px 40px 2px rgb(0, 153, 255);
   }
   .aboutInfo {
     margin-top: 70px;
@@ -293,7 +293,7 @@
   .footerContainer {
     display: flex;
     justify-content: center;
-    background-color: rgb(220, 54, 90);
+    background-color: rgb(0, 140, 255);
     color: white;
   }
   .footer div {
@@ -406,7 +406,7 @@
   border-radius: 10px;
   outline: none;
   border: none;
-  background-color: rgb(0, 255, 242);
+  background-color: rgb(0, 132, 255);
   transition: 0.5s;
 }
 .submit:hover{
@@ -431,6 +431,6 @@
     border-radius: 30px;
     outline: none;
     border: none;
-    background-color: rgb(0, 255, 242);
+    background-color: rgb(0, 140, 255);
   }
 }

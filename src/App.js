@@ -31,7 +31,7 @@ function App() {
           }}
         >
           <div className="spinner">
-            <HashLoader color={"FF2442"} loading={loading} size={150} />
+            <HashLoader color={"#a29bfe"} loading={loading} size={150} />
           </div>
         </div>
       ) : (
