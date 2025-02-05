@@ -269,7 +269,7 @@ export default function Home(props) {
           <h1 className={style.h12}>
             A Tech Enthusiast <br />
             From Bangladesh <br />
-            Currently an O'level Candidate <br />
+            Currently an A'level Candidate <br />
             {/* City - Dhaka <br /> */}
           </h1>
         </div>
